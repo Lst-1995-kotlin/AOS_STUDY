@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:transitionGroup="true">
+
+    <TextView
+        android:id="@+id/foodNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="음식명"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/foodNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="불러오는 중"
+        app:layout_constraintBottom_toBottomOf="@+id/foodNameTitle"
+        app:layout_constraintStart_toEndOf="@+id/foodNameTitle"
+        app:layout_constraintTop_toTopOf="@+id/foodNameTitle" />
+
+    <TextView
+        android:id="@+id/foodOrderCountTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:text="주문량"
+        app:layout_constraintBottom_toBottomOf="@+id/foodNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/foodNameTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/orderCountTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@+id/foodOrderCountTitleTextView"
+        app:layout_constraintEnd_toStartOf="@+id/orderCountMinusButton"
+        app:layout_constraintStart_toEndOf="@+id/orderCountPlusButton"
+        app:layout_constraintTop_toTopOf="@+id/foodOrderCountTitleTextView" />
+
+    <ImageView
+        android:id="@+id/orderCountPlusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/foodOrderCountTitleTextView"
+        app:layout_constraintStart_toEndOf="@+id/foodOrderCountTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/foodOrderCountTitleTextView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/add_24px" />
+
+    <ImageView
+        android:id="@+id/orderCountMinusButton"
+        android:layout_width="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/orderCountPlusButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/orderCountPlusButton"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/remove_24px" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
