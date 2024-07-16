@@ -2,6 +2,7 @@
 <resources>
     <style name="custom_button_style" >
         <item name="background">?attr/colorPrimary</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
     </style>
     <style name="custom_tv_style">
         <item name="android:textColor">?attr/colorOnSurface</item>
